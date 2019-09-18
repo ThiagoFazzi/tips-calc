@@ -1,6 +1,6 @@
 # tipscalc
 
-<a href="https://tipscalc-7d331.firebaseapp.com/">Live Demo</a>
+<a href="https://tipscalc-7d331.firebaseapp.com/" target"_blank">Live Demo</a>
 
 ## Project setup
 ```

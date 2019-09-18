@@ -1,5 +1,7 @@
 # tipscalc
 
+<a href="https://tipscalc-7d331.firebaseapp.com/">Live Demo</a>
+
 ## Project setup
 ```
 yarn install

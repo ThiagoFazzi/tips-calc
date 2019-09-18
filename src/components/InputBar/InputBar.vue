@@ -33,14 +33,25 @@ export default {
   },
   methods: {
     onAddItem() {
-      const item = {
-        name: this.name,
-        hours: this.hours,
-        tips: 0
-      };
-      this.$emit("addItem", item);
-      this.name = "";
-      this.hours = 0;
+      if (this.name !== "" && this.hours) {
+        const item = {
+          name: this.name,
+          hours: this.hours,
+          tips: 0
+        };
+        this.$emit("addItem", item);
+        this.name = "";
+        this.hours = 0;
+      } else {
+        return this.$ionic.alertController
+          .create({
+            header: "TipsCalc",
+            subHeader: "Alert",
+            message: "You must enter a valid value.",
+            buttons: ["OK"]
+          })
+          .then(a => a.present());
+      }
     }
   }
 };
